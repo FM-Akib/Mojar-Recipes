@@ -10,7 +10,7 @@ const Curry = () => {
     // console.log(curries.meals);
     const curriesArray = curries.meals;
     return (
-        <div className="grid md:grid-cols-3 p-12">
+        <div className="grid md:grid-cols-3 md:p-10 p-2">
         {
            curriesArray.map(curry=><Dish
              key={curry.idMeal}

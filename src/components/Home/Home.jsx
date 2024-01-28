@@ -3,6 +3,7 @@
 import { Outlet, useNavigation } from "react-router-dom";
 import Header from "../Header/Header";
 import'./Home.css';
+import bgi from '../../assets/bg.png'
 const Home = () => {
     const navigation =useNavigation();
     return (
@@ -14,6 +15,10 @@ const Home = () => {
             }
            </div>
            <Outlet/>
+
+           <div className="bg-cover bg-center" >
+            <img src={bgi} alt=""/>
+           </div>
         </div>
     );
 };

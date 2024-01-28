@@ -7,7 +7,7 @@ const Fish = () => {
     const fishes=useLoaderData().meals;
    
     return (
-        <div className="grid md:grid-cols-3 p-12">
+        <div className="grid md:grid-cols-3 md:p-10 p-2">
             {
                 fishes.map(fish =><Dish
                 key={fish.idMeal}

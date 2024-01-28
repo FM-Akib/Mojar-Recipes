@@ -7,7 +7,7 @@ const Burger = () => {
     const burgers=useLoaderData().meals;
     
     return (
-        <div className="grid md:grid-cols-3 p-12">
+        <div className="grid md:grid-cols-3 md:p-10 p-2">
         {
             burgers.map(burger =><Dish
             key={burger.idMeal}
