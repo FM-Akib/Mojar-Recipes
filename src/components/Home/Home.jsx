@@ -15,11 +15,11 @@ const Home = () => {
             }
            </div>
 
-          
-           <Outlet/>
            <div className="bg-cover bg-center" >
             <img src={bgi} alt=""/>
            </div>
+           <Outlet/>
+         
 
           
 
