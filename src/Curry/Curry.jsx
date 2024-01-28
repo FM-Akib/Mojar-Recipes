@@ -13,7 +13,7 @@ const Curry = () => {
         {
            curriesArray.map(curry=><Dish
              key={curry.idMeal}
-             curry={curry}
+             dish={curry}
            ></Dish>)
         }
         </div>

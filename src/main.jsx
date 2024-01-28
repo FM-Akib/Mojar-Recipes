@@ -23,11 +23,13 @@ const router = createBrowserRouter([
       },
       {
         path: "fish",
-        element:<Fish/>
+        element:<Fish/>,
+        loader:()=>fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=Fish')
       },
       {
         path: "burger",
-        element:<Burger/>
+        element:<Burger/>,
+        loader:()=>fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=Burger')
       },
     ]
   },

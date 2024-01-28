@@ -1,7 +1,7 @@
 // import React from 'react';
 
-const Dish = ({curry}) => {
-     const {strMeal,strMealThumb,strArea}=curry;
+const Dish = ({dish}) => {
+     const {strMeal,strMealThumb,strArea}=dish;
     return (
         <div>
             <div className="card card-compact w-96 bg-base-100 shadow-xl mb-10">
