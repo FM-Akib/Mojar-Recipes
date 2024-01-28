@@ -1,0 +1,13 @@
+.DishView{
+    display: flex;
+    flex-direction: row;
+   
+    padding: 3rem;
+}
+.dish-title{
+    font-size:33px;
+    font-weight: bold;
+}
+.DishView img{
+    border-radius:12px;
+}

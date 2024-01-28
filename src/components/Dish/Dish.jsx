@@ -1,7 +1,10 @@
 // import React from 'react';
 
+import { Link } from "react-router-dom";
+
 const Dish = ({dish}) => {
      const {strMeal,strMealThumb,strArea}=dish;
+
     return (
         <div>
             <div className="card card-compact w-96 bg-base-100 shadow-xl mb-10">
@@ -10,7 +13,7 @@ const Dish = ({dish}) => {
                 <h2 className="card-title">{strMeal}</h2>
                 <p>{strArea}</p>
                 <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+               <Link to={`/dish/${dish.idMeal}`}><button className="btn btn-primary">View</button></Link> 
                 </div>
             </div>
             </div>
