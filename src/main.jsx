@@ -6,10 +6,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './components/Home/Home.jsx';
-import Curry from './Curry/Curry.jsx';
 import Fish from './components/Fish/Fish.jsx';
 import Burger from './components/Burger/Burger.jsx';
 import Dishview from './components/Dishview/Dishview.jsx';
+import Notfound from './components/Notfound/Notfound.jsx';
+import Curry from './components/Curry/Curry.jsx';
 
 
 const router = createBrowserRouter([
@@ -36,7 +37,11 @@ const router = createBrowserRouter([
          path:"dish/:dishId",
          element:<Dishview/>,
          loader:({params})=>fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.dishId}`)
-      }
+      },   
+      {
+        path:"*",
+        element:<Notfound/>
+     }
     ]
   },
 ]);

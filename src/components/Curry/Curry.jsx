@@ -1,7 +1,8 @@
 // import React from 'react';
 
 import { useLoaderData } from "react-router-dom";
-import Dish from "../components/Dish/Dish";
+import Dish from "../Dish/Dish";
+
 
 
 const Curry = () => {
