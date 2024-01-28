@@ -14,11 +14,17 @@ const Home = () => {
                 navigation.state==='loading'?<span className="loading loading-dots loading-lg loaderHeight"></span>:''
             }
            </div>
-           <Outlet/>
 
+          
+           <Outlet/>
            <div className="bg-cover bg-center" >
             <img src={bgi} alt=""/>
            </div>
+
+          
+
+
+
         </div>
     );
 };
